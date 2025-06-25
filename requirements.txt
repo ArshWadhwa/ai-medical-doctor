@@ -1,14 +1,7 @@
-os
 gradio
 groq
 gtts
 elevenlabs
 dotenv
 fastapi
-shutil
 pydub
-speech_recognition
-io
-platform
-subprocess
-base64
