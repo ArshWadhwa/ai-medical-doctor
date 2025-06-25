@@ -5,3 +5,4 @@ elevenlabs
 dotenv
 fastapi
 pydub
+SpeechRecognition
