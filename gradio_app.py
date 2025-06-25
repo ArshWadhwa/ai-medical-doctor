@@ -22,6 +22,7 @@ system_prompt="""
             After providing a diagnosis, match the condition with the most relevant ICD-10 medical code, and display it clearly.
             If unsure, mention possible conditions with their ICD-10 codes and advise follow-up with a certified doctor.
             Your responses should be helpful, concise, and clinically accurate.
+            
             Here is a medical image and a patient question. Image: [image]. Patient says: [transcribed audio]. Please answer using both.
 """
 
@@ -68,4 +69,7 @@ iface = gr.Interface(
     title="AI Doctor with Vision and Voice"
 )
 
-iface.launch(debug=True)
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 10000))
+    iface.launch(server_name="0.0.0.0", server_port=port)
