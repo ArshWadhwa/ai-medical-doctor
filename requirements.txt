@@ -1,8 +1,11 @@
-gradio
+gradio>=4.0.0
 groq
 gtts
 elevenlabs
-dotenv
+python-dotenv
 fastapi
 pydub
 SpeechRecognition
+requests
+Pillow
+numpy
